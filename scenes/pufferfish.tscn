@@ -1,0 +1,53 @@
+[gd_scene format=3 uid="uid://bn21jd7ogxmel"]
+
+[ext_resource type="Script" uid="uid://cxqit218q7sca" path="res://scripts/pufferfish.gd" id="1_ry8r6"]
+[ext_resource type="Texture2D" uid="uid://qnkiqb213org" path="res://assets/Entities/128x256-RAPIDPUNCHES-FEB2021-4.png" id="1_vqe7j"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ry8r6"]
+atlas = ExtResource("1_vqe7j")
+region = Rect2(32, 224, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kn2uh"]
+atlas = ExtResource("1_vqe7j")
+region = Rect2(64, 224, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r0q7b"]
+atlas = ExtResource("1_vqe7j")
+region = Rect2(96, 224, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_e7l6o"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ry8r6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kn2uh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r0q7b")
+}],
+"loop": true,
+"name": &"swim",
+"speed": 6.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_nn4or"]
+radius = 13.0
+
+[node name="Pufferfish" type="Area2D" unique_id=606820507]
+script = ExtResource("1_ry8r6")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=2127837108]
+sprite_frames = SubResource("SpriteFrames_e7l6o")
+animation = &"swim"
+frame_progress = 0.06813755
+flip_h = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1146507682]
+shape = SubResource("CircleShape2D_nn4or")
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="." unique_id=409537271]
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]
