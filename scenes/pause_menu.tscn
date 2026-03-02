@@ -1,0 +1,91 @@
+[gd_scene format=3 uid="uid://bqy1vic8askym"]
+
+[ext_resource type="Script" uid="uid://cp7fu7tyrngeq" path="res://scripts/pause_menu.gd" id="1_n87rw"]
+
+[node name="PauseMenu" type="Control" unique_id=1817210688]
+process_mode = 3
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_n87rw")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=353460946]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0.4627451, 1, 1)
+
+[node name="Label" type="Label" parent="." unique_id=1020633830]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -354.5
+offset_top = 20.0
+offset_right = 354.5
+offset_bottom = 195.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 128
+text = "Paused"
+horizontal_alignment = 1
+
+[node name="ContinueButton" type="Button" parent="." unique_id=652096465]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -125.0
+offset_top = -368.0
+offset_right = 125.0
+offset_bottom = -293.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_font_sizes/font_size = 48
+text = "Continue"
+
+[node name="RestartButton" type="Button" parent="." unique_id=605370059]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -125.0
+offset_top = -284.0
+offset_right = 125.0
+offset_bottom = -209.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_font_sizes/font_size = 48
+text = "Restart"
+
+[node name="QuitButton" type="Button" parent="." unique_id=1465011621]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -125.0
+offset_top = -200.0
+offset_right = 125.0
+offset_bottom = -125.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_font_sizes/font_size = 48
+text = "Quit
+"
+
+[connection signal="pressed" from="ContinueButton" to="." method="_on_continue_pressed"]
+[connection signal="pressed" from="RestartButton" to="." method="_on_restart_pressed"]
+[connection signal="pressed" from="QuitButton" to="." method="_on_quit_pressed"]
