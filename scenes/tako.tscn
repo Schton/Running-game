@@ -1,0 +1,53 @@
+[gd_scene format=3 uid="uid://3fya8d5j7ylq"]
+
+[ext_resource type="Script" uid="uid://dxrtcerbfu7ao" path="res://scripts/tako.gd" id="1_0qpnm"]
+[ext_resource type="Texture2D" uid="uid://qnkiqb213org" path="res://assets/Entities/128x256-RAPIDPUNCHES-FEB2021-4.png" id="1_d86j5"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0qpnm"]
+atlas = ExtResource("1_d86j5")
+region = Rect2(96, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gmgum"]
+atlas = ExtResource("1_d86j5")
+region = Rect2(0, 128, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hdofm"]
+atlas = ExtResource("1_d86j5")
+region = Rect2(32, 128, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_mp5b1"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0qpnm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gmgum")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hdofm")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_oabld"]
+radius = 11.0
+
+[node name="Tako" type="Area2D" unique_id=123436851]
+script = ExtResource("1_0qpnm")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1006961123]
+sprite_frames = SubResource("SpriteFrames_mp5b1")
+autoplay = "default"
+frame_progress = 0.60230374
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2143948147]
+shape = SubResource("CapsuleShape2D_oabld")
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="." unique_id=839206605]
+rect = Rect2(-10, -13, 20, 25)
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]

@@ -1,18 +1,19 @@
-[gd_scene format=3 uid="uid://dmsf2ljqwqofm"]
+[gd_scene format=3 uid="uid://bednwrlvouojf"]
 
-[ext_resource type="Texture2D" uid="uid://wjisjp00wnfi" path="res://assets/Environment/Ocean0.png" id="1_6sh32"]
-[ext_resource type="Texture2D" uid="uid://b0wyeqxrxt8if" path="res://assets/Environment/Ocean1.png" id="2_ejswk"]
-[ext_resource type="Texture2D" uid="uid://ddnmx77qq573k" path="res://assets/Environment/Ocean2.png" id="3_bbk5w"]
-[ext_resource type="Texture2D" uid="uid://bhbfa8hbhl3g6" path="res://assets/Environment/Sky0.png" id="4_conm7"]
-[ext_resource type="Texture2D" uid="uid://daij81yecswm" path="res://assets/Environment/Sky1.png" id="5_d3jkd"]
-[ext_resource type="Texture2D" uid="uid://dvasl8o5ea6xy" path="res://assets/Environment/Sky2.png" id="6_u3awl"]
-[ext_resource type="PackedScene" uid="uid://biwg6keo6yfyf" path="res://scenes/player.tscn" id="7_ejswk"]
-[ext_resource type="PackedScene" uid="uid://bn21jd7ogxmel" path="res://scenes/pufferfish.tscn" id="8_bbk5w"]
-[ext_resource type="PackedScene" uid="uid://bqy1vic8askym" path="res://scenes/pause_menu.tscn" id="9_conm7"]
-[ext_resource type="PackedScene" uid="uid://dykix03lyra6w" path="res://scenes/finish_line.tscn" id="10_d3jkd"]
+[ext_resource type="Texture2D" uid="uid://wjisjp00wnfi" path="res://assets/Environment/Ocean0.png" id="1_hrcei"]
+[ext_resource type="Texture2D" uid="uid://b0wyeqxrxt8if" path="res://assets/Environment/Ocean1.png" id="2_xa7n4"]
+[ext_resource type="Texture2D" uid="uid://ddnmx77qq573k" path="res://assets/Environment/Ocean2.png" id="3_bo4dx"]
+[ext_resource type="Texture2D" uid="uid://bhbfa8hbhl3g6" path="res://assets/Environment/Sky0.png" id="4_76toy"]
+[ext_resource type="Texture2D" uid="uid://daij81yecswm" path="res://assets/Environment/Sky1.png" id="5_8g4ke"]
+[ext_resource type="Texture2D" uid="uid://dvasl8o5ea6xy" path="res://assets/Environment/Sky2.png" id="6_56gwk"]
+[ext_resource type="Texture2D" uid="uid://dgakgoeupn0dh" path="res://assets/Environment/Night/Underwater_Night_2.jpg" id="7_hrcei"]
+[ext_resource type="PackedScene" uid="uid://biwg6keo6yfyf" path="res://scenes/player.tscn" id="7_ve5ok"]
+[ext_resource type="PackedScene" uid="uid://3fya8d5j7ylq" path="res://scenes/tako.tscn" id="9_xa7n4"]
+[ext_resource type="PackedScene" uid="uid://bp7i60iyhx23e" path="res://scenes/sea_mines.tscn" id="10_bo4dx"]
+[ext_resource type="PackedScene" uid="uid://dykix03lyra6w" path="res://scenes/finish_line.tscn" id="11_76toy"]
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_conm7"]
-texture = ExtResource("1_6sh32")
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wvb8j"]
+texture = ExtResource("1_hrcei")
 0:13/0 = 0
 1:13/0 = 0
 2:13/0 = 0
@@ -600,8 +601,8 @@ texture = ExtResource("1_6sh32")
 14:49/0 = 0
 15:49/0 = 0
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_d3jkd"]
-texture = ExtResource("2_ejswk")
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_g8vcy"]
+texture = ExtResource("2_xa7n4")
 9:0/0 = 0
 10:0/0 = 0
 23:0/0 = 0
@@ -745,8 +746,8 @@ texture = ExtResource("2_ejswk")
 20:11/0 = 0
 21:11/0 = 0
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_u3awl"]
-texture = ExtResource("3_bbk5w")
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_cqal4"]
+texture = ExtResource("3_bo4dx")
 26:0/0 = 0
 28:0/0 = 0
 10:1/0 = 0
@@ -1835,8 +1836,8 @@ texture = ExtResource("3_bbk5w")
 62:19/0 = 0
 63:19/0 = 0
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2ku1j"]
-texture = ExtResource("4_conm7")
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_o3sye"]
+texture = ExtResource("4_76toy")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -2638,8 +2639,8 @@ texture = ExtResource("4_conm7")
 14:49/0 = 0
 15:49/0 = 0
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_f31uk"]
-texture = ExtResource("5_d3jkd")
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_24ks5"]
+texture = ExtResource("5_8g4ke")
 0:4/0 = 0
 1:4/0 = 0
 13:4/0 = 0
@@ -3342,8 +3343,8 @@ texture = ExtResource("5_d3jkd")
 14:49/0 = 0
 15:49/0 = 0
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_gnai3"]
-texture = ExtResource("6_u3awl")
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_s4es8"]
+texture = ExtResource("6_56gwk")
 0:2/0 = 0
 14:2/0 = 0
 15:2/0 = 0
@@ -4026,197 +4027,168 @@ texture = ExtResource("6_u3awl")
 14:49/0 = 0
 15:49/0 = 0
 
-[sub_resource type="TileSet" id="TileSet_mvsps"]
-sources/0 = SubResource("TileSetAtlasSource_conm7")
-sources/1 = SubResource("TileSetAtlasSource_d3jkd")
-sources/2 = SubResource("TileSetAtlasSource_u3awl")
-sources/3 = SubResource("TileSetAtlasSource_2ku1j")
-sources/4 = SubResource("TileSetAtlasSource_f31uk")
-sources/5 = SubResource("TileSetAtlasSource_gnai3")
+[sub_resource type="TileSet" id="TileSet_63e4f"]
+sources/0 = SubResource("TileSetAtlasSource_wvb8j")
+sources/1 = SubResource("TileSetAtlasSource_g8vcy")
+sources/2 = SubResource("TileSetAtlasSource_cqal4")
+sources/3 = SubResource("TileSetAtlasSource_o3sye")
+sources/4 = SubResource("TileSetAtlasSource_24ks5")
+sources/5 = SubResource("TileSetAtlasSource_s4es8")
 
-[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_conm7"]
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_hrcei"]
 
-[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_d3jkd"]
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_xa7n4"]
 normal = Vector2(0, 1)
 
-[node name="Node2D" type="Node2D" unique_id=1346473699]
-position = Vector2(83, -691)
+[node name="Node2D" type="Node2D" unique_id=709194040]
 
-[node name="TileMap" type="TileMap" parent="." unique_id=1833359735]
+[node name="TileMap" type="TileMap" parent="." unique_id=674348947]
 format = 2
 
-[node name="Background" type="TileMapLayer" parent="TileMap" unique_id=1819126325]
-tile_set = SubResource("TileSet_mvsps")
+[node name="Background" type="TileMapLayer" parent="TileMap" unique_id=151255624]
+tile_set = SubResource("TileSet_63e4f")
 
-[node name="ParallaxBackground" type="ParallaxBackground" parent="." unique_id=1620484601]
+[node name="ParallaxBackground" type="ParallaxBackground" parent="." unique_id=1761601467]
 
-[node name="Sky" type="ParallaxLayer" parent="ParallaxBackground" unique_id=1253408083]
-position = Vector2(83, -691)
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground" unique_id=1036891235]
 
-[node name="sky" type="Sprite2D" parent="ParallaxBackground/Sky" unique_id=22538471]
-position = Vector2(4511, 0)
-scale = Vector2(36.210938, 1)
-texture = ExtResource("4_conm7")
+[node name="Sprite2D2" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer" unique_id=410384422]
+position = Vector2(1846, 906)
+scale = Vector2(2.438151, 1.6153846)
+texture = ExtResource("7_hrcei")
 
-[node name="cloud" type="Sprite2D" parent="ParallaxBackground/Sky" unique_id=768116089]
-position = Vector2(4513.25, 123.5)
-scale = Vector2(36.22461, 0.68875)
-texture = ExtResource("5_d3jkd")
-
-[node name="cloud2" type="Sprite2D" parent="ParallaxBackground/Sky" unique_id=203148947]
-position = Vector2(4511.94, 160.00018)
-scale = Vector2(36.211407, 0.5893042)
-texture = ExtResource("6_u3awl")
-
-[node name="Ocean" type="ParallaxLayer" parent="ParallaxBackground" unique_id=1043670964]
-position = Vector2(83, -691)
-
-[node name="ocean" type="Sprite2D" parent="ParallaxBackground/Ocean" unique_id=781590442]
-position = Vector2(4511.0005, 804)
-scale = Vector2(36.210938, 2.6025)
-texture = ExtResource("1_6sh32")
-
-[node name="ship2" type="Sprite2D" parent="ParallaxBackground/Ocean" unique_id=679176868]
-position = Vector2(699.0001, 1025)
-scale = Vector2(3.9410257, 3.9410257)
-texture = ExtResource("2_ejswk")
-
-[node name="ship" type="Sprite2D" parent="ParallaxBackground/Ocean" unique_id=1154134350]
-position = Vector2(7174, 1031)
-scale = Vector2(3.9410257, 3.9410257)
-texture = ExtResource("2_ejswk")
+[node name="Sprite2D3" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer" unique_id=1716253653]
+position = Vector2(5591, 906)
+rotation = 6.2831855
+scale = Vector2(2.438151, 1.6153846)
+texture = ExtResource("7_hrcei")
 flip_h = true
 
-[node name="rocks" type="Sprite2D" parent="ParallaxBackground/Ocean" unique_id=1603956976]
-position = Vector2(658, 1442.5)
-scale = Vector2(1.5234375, 2.4875777)
-texture = ExtResource("3_bbk5w")
+[node name="Player" parent="." unique_id=1064180021 instance=ExtResource("7_ve5ok")]
+position = Vector2(591, 976)
 
-[node name="rocks2" type="Sprite2D" parent="ParallaxBackground/Ocean" unique_id=122634219]
-position = Vector2(6479.5, 1442)
-scale = Vector2(5.206054, 2.4875777)
-texture = ExtResource("3_bbk5w")
+[node name="Camera2D" type="Camera2D" parent="Player" unique_id=1953765092]
 
-[node name="rocks3" type="Sprite2D" parent="ParallaxBackground/Ocean" unique_id=1546767876]
-position = Vector2(2626.0005, 1439.9653)
-scale = Vector2(2.3208618, 2.5157418)
-texture = ExtResource("3_bbk5w")
-flip_h = true
+[node name="floor" type="StaticBody2D" parent="." unique_id=892681141]
+position = Vector2(69, 1523)
 
-[node name="Player" parent="." unique_id=1064180021 instance=ExtResource("7_ejswk")]
-position = Vector2(453, 1050)
+[node name="CollisionShape2D" type="CollisionShape2D" parent="floor" unique_id=313984702]
+shape = SubResource("WorldBoundaryShape2D_hrcei")
 
-[node name="Camera2D" type="Camera2D" parent="Player" unique_id=583014293]
+[node name="ceiling" type="StaticBody2D" parent="." unique_id=184297091]
+position = Vector2(91, 329)
 
-[node name="Pufferfish" parent="." unique_id=606820507 instance=ExtResource("8_bbk5w")]
-position = Vector2(1578, 1016)
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ceiling" unique_id=223492994]
+shape = SubResource("WorldBoundaryShape2D_xa7n4")
 
-[node name="Pufferfish2" parent="." unique_id=880657353 instance=ExtResource("8_bbk5w")]
-position = Vector2(1473, 822)
+[node name="Tako" parent="." unique_id=123436851 instance=ExtResource("9_xa7n4")]
+position = Vector2(1305, 986)
 
-[node name="Pufferfish3" parent="." unique_id=424548815 instance=ExtResource("8_bbk5w")]
-position = Vector2(1827, 676)
+[node name="Tako6" parent="." unique_id=570296482 instance=ExtResource("9_xa7n4")]
+position = Vector2(2696, 1280)
 
-[node name="Pufferfish4" parent="." unique_id=1278509121 instance=ExtResource("8_bbk5w")]
-position = Vector2(1764, 1321)
+[node name="Tako18" parent="." unique_id=2349218 instance=ExtResource("9_xa7n4")]
+position = Vector2(2958, 972)
 
-[node name="Pufferfish5" parent="." unique_id=1029216944 instance=ExtResource("8_bbk5w")]
-position = Vector2(1815, 1661)
+[node name="Tako19" parent="." unique_id=367842517 instance=ExtResource("9_xa7n4")]
+position = Vector2(3069, 1366)
 
-[node name="Pufferfish6" parent="." unique_id=1325220690 instance=ExtResource("8_bbk5w")]
-position = Vector2(2332, 1112)
+[node name="Tako20" parent="." unique_id=2066405414 instance=ExtResource("9_xa7n4")]
+position = Vector2(3140, 604)
 
-[node name="Pufferfish10" parent="." unique_id=631537465 instance=ExtResource("8_bbk5w")]
-position = Vector2(3030, 1051)
+[node name="Tako21" parent="." unique_id=1039645465 instance=ExtResource("9_xa7n4")]
+position = Vector2(2752, 421)
 
-[node name="Pufferfish11" parent="." unique_id=465010467 instance=ExtResource("8_bbk5w")]
-position = Vector2(3050, 692)
+[node name="Tako22" parent="." unique_id=1858152601 instance=ExtResource("9_xa7n4")]
+position = Vector2(2521, 646)
 
-[node name="Pufferfish12" parent="." unique_id=876013488 instance=ExtResource("8_bbk5w")]
-position = Vector2(2964, 1278)
+[node name="Tako23" parent="." unique_id=334016986 instance=ExtResource("9_xa7n4")]
+position = Vector2(3517, 1160)
 
-[node name="Pufferfish13" parent="." unique_id=218402837 instance=ExtResource("8_bbk5w")]
-position = Vector2(2696, 1056)
+[node name="Tako25" parent="." unique_id=1688697409 instance=ExtResource("9_xa7n4")]
+position = Vector2(3677, 776)
 
-[node name="Pufferfish14" parent="." unique_id=1020283710 instance=ExtResource("8_bbk5w")]
-position = Vector2(2645, 1314)
+[node name="Tako26" parent="." unique_id=1647073869 instance=ExtResource("9_xa7n4")]
+position = Vector2(3498, 566)
 
-[node name="Pufferfish15" parent="." unique_id=398141019 instance=ExtResource("8_bbk5w")]
-position = Vector2(3110, 1602)
+[node name="Tako27" parent="." unique_id=61969339 instance=ExtResource("9_xa7n4")]
+position = Vector2(3543, 1424)
 
-[node name="Pufferfish16" parent="." unique_id=1259667856 instance=ExtResource("8_bbk5w")]
-position = Vector2(3272, 1324)
+[node name="Tako28" parent="." unique_id=145971587 instance=ExtResource("9_xa7n4")]
+position = Vector2(3913, 837)
 
-[node name="Pufferfish17" parent="." unique_id=1601930720 instance=ExtResource("8_bbk5w")]
-position = Vector2(3338, 904)
+[node name="Tako29" parent="." unique_id=709235544 instance=ExtResource("9_xa7n4")]
+position = Vector2(3835, 460)
 
-[node name="Pufferfish18" parent="." unique_id=1325491883 instance=ExtResource("8_bbk5w")]
-position = Vector2(3389, 565)
+[node name="Tako30" parent="." unique_id=425537170 instance=ExtResource("9_xa7n4")]
+position = Vector2(3993, 1236)
 
-[node name="Pufferfish19" parent="." unique_id=415014822 instance=ExtResource("8_bbk5w")]
-position = Vector2(3505, 772)
+[node name="Tako31" parent="." unique_id=633951810 instance=ExtResource("9_xa7n4")]
+position = Vector2(3952, 1034)
 
-[node name="Pufferfish26" parent="." unique_id=1902585749 instance=ExtResource("8_bbk5w")]
-position = Vector2(3616, 625)
+[node name="Tako24" parent="." unique_id=1185957426 instance=ExtResource("9_xa7n4")]
+position = Vector2(3360, 849)
 
-[node name="Pufferfish27" parent="." unique_id=2037710584 instance=ExtResource("8_bbk5w")]
-position = Vector2(3282, 701)
+[node name="Tako17" parent="." unique_id=1891049328 instance=ExtResource("9_xa7n4")]
+position = Vector2(2085, 544)
 
-[node name="Pufferfish20" parent="." unique_id=1693878619 instance=ExtResource("8_bbk5w")]
-position = Vector2(3753, 838)
+[node name="Tako11" parent="." unique_id=186468777 instance=ExtResource("9_xa7n4")]
+position = Vector2(2841, 632)
 
-[node name="Pufferfish21" parent="." unique_id=1126178718 instance=ExtResource("8_bbk5w")]
-position = Vector2(3657, 1470)
+[node name="Tako12" parent="." unique_id=59065822 instance=ExtResource("9_xa7n4")]
+position = Vector2(1977, 1237)
 
-[node name="Pufferfish22" parent="." unique_id=647917714 instance=ExtResource("8_bbk5w")]
-position = Vector2(3637, 1182)
+[node name="Tako13" parent="." unique_id=536208570 instance=ExtResource("9_xa7n4")]
+position = Vector2(2503, 873)
 
-[node name="Pufferfish28" parent="." unique_id=1023846776 instance=ExtResource("8_bbk5w")]
-position = Vector2(3851, 1113)
+[node name="Tako14" parent="." unique_id=187629764 instance=ExtResource("9_xa7n4")]
+position = Vector2(2437, 427)
 
-[node name="Pufferfish29" parent="." unique_id=394496764 instance=ExtResource("8_bbk5w")]
-position = Vector2(3340, 1106)
+[node name="Tako15" parent="." unique_id=177399887 instance=ExtResource("9_xa7n4")]
+position = Vector2(1847, 998)
 
-[node name="Pufferfish23" parent="." unique_id=2006124276 instance=ExtResource("8_bbk5w")]
-position = Vector2(3637, 1000)
+[node name="Tako16" parent="." unique_id=1830934883 instance=ExtResource("9_xa7n4")]
+position = Vector2(1687, 427)
 
-[node name="Pufferfish24" parent="." unique_id=1774364163 instance=ExtResource("8_bbk5w")]
-position = Vector2(3511, 1349)
+[node name="Tako7" parent="." unique_id=918653989 instance=ExtResource("9_xa7n4")]
+position = Vector2(2090, 845)
 
-[node name="Pufferfish25" parent="." unique_id=534618162 instance=ExtResource("8_bbk5w")]
-position = Vector2(3501, 1622)
+[node name="Tako8" parent="." unique_id=1891760166 instance=ExtResource("9_xa7n4")]
+position = Vector2(2340, 1191)
 
-[node name="Pufferfish7" parent="." unique_id=200842886 instance=ExtResource("8_bbk5w")]
-position = Vector2(2454, 543)
+[node name="Tako9" parent="." unique_id=2128315041 instance=ExtResource("9_xa7n4")]
+position = Vector2(1763, 1383)
 
-[node name="Pufferfish8" parent="." unique_id=809542261 instance=ExtResource("8_bbk5w")]
-position = Vector2(2366, 885)
+[node name="Tako10" parent="." unique_id=1602621584 instance=ExtResource("9_xa7n4")]
+position = Vector2(1272, 394)
 
-[node name="Pufferfish9" parent="." unique_id=1734483640 instance=ExtResource("8_bbk5w")]
-position = Vector2(2618, 1482)
+[node name="Tako2" parent="." unique_id=1089504782 instance=ExtResource("9_xa7n4")]
+position = Vector2(1553, 841)
 
-[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=2110473480]
-process_mode = 3
-visible = false
+[node name="Tako3" parent="." unique_id=1156387304 instance=ExtResource("9_xa7n4")]
+position = Vector2(1580, 1153)
 
-[node name="PauseMenu" parent="CanvasLayer" unique_id=1817210688 instance=ExtResource("9_conm7")]
-offset_left = 83.0
-offset_top = -691.0
-offset_right = 83.0
-offset_bottom = -691.0
+[node name="Tako4" parent="." unique_id=1893857652 instance=ExtResource("9_xa7n4")]
+position = Vector2(1391, 1385)
 
-[node name="floor" type="StaticBody2D" parent="." unique_id=487312571]
-position = Vector2(-29, 1748)
+[node name="Tako5" parent="." unique_id=1823971255 instance=ExtResource("9_xa7n4")]
+position = Vector2(1403, 617)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="floor" unique_id=964018101]
-shape = SubResource("WorldBoundaryShape2D_conm7")
+[node name="SeaMines" parent="." unique_id=1105593223 instance=ExtResource("10_bo4dx")]
+position = Vector2(1172, 1325)
 
-[node name="ceiling" type="StaticBody2D" parent="." unique_id=407558055]
-position = Vector2(-38, 463)
+[node name="SeaMines2" parent="." unique_id=1850671723 instance=ExtResource("10_bo4dx")]
+position = Vector2(1554, 1396)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ceiling" unique_id=59783001]
-shape = SubResource("WorldBoundaryShape2D_d3jkd")
+[node name="SeaMines3" parent="." unique_id=553968819 instance=ExtResource("10_bo4dx")]
+position = Vector2(2111, 1357)
 
-[node name="FinishLine" parent="." unique_id=815341691 instance=ExtResource("10_d3jkd")]
-position = Vector2(2249, 891)
-next_scene_path = "uid://bednwrlvouojf"
+[node name="SeaMines4" parent="." unique_id=580598031 instance=ExtResource("10_bo4dx")]
+position = Vector2(1805, 1170)
+
+[node name="SeaMines5" parent="." unique_id=1087469821 instance=ExtResource("10_bo4dx")]
+position = Vector2(2433, 1331)
+
+[node name="FinishLine" parent="." unique_id=815341691 instance=ExtResource("11_76toy")]
+position = Vector2(975, 867)
+level_name = "Congratulations!"

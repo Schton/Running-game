@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://bp7i60iyhx23e"]
+
+[ext_resource type="Texture2D" uid="uid://dxp1cdg4hf3q6" path="res://assets/Environment/4.png" id="1_n6tg6"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mvo0y"]
+atlas = ExtResource("1_n6tg6")
+region = Rect2(0, 0, 288, 324)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_a761w"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mvo0y")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_n6tg6"]
+radius = 73.02739
+
+[node name="SeaMines" type="Node2D" unique_id=1105593223]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1673098078]
+position = Vector2(0, 18.999992)
+scale = Vector2(0.98784727, 0.98784727)
+sprite_frames = SubResource("SpriteFrames_a761w")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=274009304]
+position = Vector2(-2.999999, 1.9999962)
+shape = SubResource("CircleShape2D_n6tg6")

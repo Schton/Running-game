@@ -1,7 +1,5 @@
 extends CharacterBody2D
 # Define these at the top of your script or in the Inspector
-@export var min_y = 400.0  # Top boundary (Sky)
-@export var max_y = 1800.0 # Bottom boundary (Ocean floor)
 @export var speed = 100.0
 
 func _physics_process(delta):
@@ -18,6 +16,3 @@ func _physics_process(delta):
 
 	# 3. Apply movement
 	move_and_slide()
-	
-	# Keep the player within the vertical bounds
-	position.y = clamp(position.y, min_y, max_y)
