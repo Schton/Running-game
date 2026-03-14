@@ -4108,9 +4108,6 @@ position = Vector2(453, 1050)
 
 [node name="Camera2D" type="Camera2D" parent="Player" unique_id=583014293]
 
-[node name="Pufferfish" parent="." unique_id=606820507 instance=ExtResource("8_bbk5w")]
-position = Vector2(1578, 1016)
-
 [node name="Pufferfish2" parent="." unique_id=880657353 instance=ExtResource("8_bbk5w")]
 position = Vector2(1473, 822)
 
@@ -4123,9 +4120,6 @@ position = Vector2(1764, 1321)
 [node name="Pufferfish5" parent="." unique_id=1029216944 instance=ExtResource("8_bbk5w")]
 position = Vector2(1815, 1661)
 
-[node name="Pufferfish6" parent="." unique_id=1325220690 instance=ExtResource("8_bbk5w")]
-position = Vector2(2332, 1112)
-
 [node name="Pufferfish10" parent="." unique_id=631537465 instance=ExtResource("8_bbk5w")]
 position = Vector2(3030, 1051)
 
@@ -4134,9 +4128,6 @@ position = Vector2(3050, 692)
 
 [node name="Pufferfish12" parent="." unique_id=876013488 instance=ExtResource("8_bbk5w")]
 position = Vector2(2964, 1278)
-
-[node name="Pufferfish13" parent="." unique_id=218402837 instance=ExtResource("8_bbk5w")]
-position = Vector2(2696, 1056)
 
 [node name="Pufferfish14" parent="." unique_id=1020283710 instance=ExtResource("8_bbk5w")]
 position = Vector2(2645, 1314)
@@ -4196,14 +4187,10 @@ position = Vector2(2366, 885)
 position = Vector2(2618, 1482)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=2110473480]
-process_mode = 3
-visible = false
+layer = 100
 
 [node name="PauseMenu" parent="CanvasLayer" unique_id=1817210688 instance=ExtResource("9_conm7")]
-offset_left = 83.0
-offset_top = -691.0
-offset_right = 83.0
-offset_bottom = -691.0
+z_index = 100
 
 [node name="floor" type="StaticBody2D" parent="." unique_id=487312571]
 position = Vector2(-29, 1748)
@@ -4218,5 +4205,5 @@ position = Vector2(-38, 463)
 shape = SubResource("WorldBoundaryShape2D_d3jkd")
 
 [node name="FinishLine" parent="." unique_id=815341691 instance=ExtResource("10_d3jkd")]
-position = Vector2(2249, 891)
+position = Vector2(2901, 894)
 next_scene_path = "uid://bednwrlvouojf"
