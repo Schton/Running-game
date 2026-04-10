@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://bednwrlvouojf"]
 
+[ext_resource type="Script" uid="uid://cemntv44bftpo" path="res://scripts/level_2.gd" id="1_56gwk"]
 [ext_resource type="Texture2D" uid="uid://wjisjp00wnfi" path="res://assets/Environment/Ocean0.png" id="1_hrcei"]
 [ext_resource type="Texture2D" uid="uid://b0wyeqxrxt8if" path="res://assets/Environment/Ocean1.png" id="2_xa7n4"]
 [ext_resource type="Texture2D" uid="uid://ddnmx77qq573k" path="res://assets/Environment/Ocean2.png" id="3_bo4dx"]
@@ -11,6 +12,8 @@
 [ext_resource type="PackedScene" uid="uid://3fya8d5j7ylq" path="res://scenes/tako.tscn" id="9_xa7n4"]
 [ext_resource type="PackedScene" uid="uid://bp7i60iyhx23e" path="res://scenes/sea_mines.tscn" id="10_bo4dx"]
 [ext_resource type="PackedScene" uid="uid://dykix03lyra6w" path="res://scenes/finish_line.tscn" id="11_76toy"]
+[ext_resource type="PackedScene" uid="uid://bqy1vic8askym" path="res://scenes/pause_menu.tscn" id="12_8g4ke"]
+[ext_resource type="AudioStream" uid="uid://dksjnj5ulqu4u" path="res://assets/audio/bgm.mp3" id="14_ve5ok"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wvb8j"]
 texture = ExtResource("1_hrcei")
@@ -4041,6 +4044,7 @@ sources/5 = SubResource("TileSetAtlasSource_s4es8")
 normal = Vector2(0, 1)
 
 [node name="Node2D" type="Node2D" unique_id=709194040]
+script = ExtResource("1_56gwk")
 
 [node name="TileMap" type="TileMap" parent="." unique_id=674348947]
 format = 2
@@ -4190,5 +4194,15 @@ position = Vector2(1805, 1170)
 position = Vector2(2433, 1331)
 
 [node name="FinishLine" parent="." unique_id=815341691 instance=ExtResource("11_76toy")]
-position = Vector2(1850, 873)
+position = Vector2(2695, 927)
 level_name = "Congratulations!"
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1700849891]
+layer = 100
+
+[node name="PauseMenu" parent="CanvasLayer" unique_id=1817210688 instance=ExtResource("12_8g4ke")]
+z_index = 100
+metadata/_edit_use_anchors_ = true
+
+[node name="BGMPlayer" type="AudioStreamPlayer" parent="." unique_id=730055857]
+stream = ExtResource("14_ve5ok")

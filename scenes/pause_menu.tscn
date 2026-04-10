@@ -45,29 +45,13 @@ anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
 offset_left = -125.0
-offset_top = -368.0
+offset_top = -335.0
 offset_right = 125.0
-offset_bottom = -293.0
+offset_bottom = -260.0
 grow_horizontal = 2
 grow_vertical = 0
 theme_override_font_sizes/font_size = 48
 text = "Continue"
-
-[node name="RestartButton" type="Button" parent="." unique_id=605370059]
-layout_mode = 1
-anchors_preset = 7
-anchor_left = 0.5
-anchor_top = 1.0
-anchor_right = 0.5
-anchor_bottom = 1.0
-offset_left = -125.0
-offset_top = -284.0
-offset_right = 125.0
-offset_bottom = -209.0
-grow_horizontal = 2
-grow_vertical = 0
-theme_override_font_sizes/font_size = 48
-text = "Restart"
 
 [node name="QuitButton" type="Button" parent="." unique_id=1465011621]
 layout_mode = 1
@@ -77,9 +61,9 @@ anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
 offset_left = -125.0
-offset_top = -200.0
+offset_top = -229.0
 offset_right = 125.0
-offset_bottom = -125.0
+offset_bottom = -154.0
 grow_horizontal = 2
 grow_vertical = 0
 theme_override_font_sizes/font_size = 48
@@ -87,5 +71,4 @@ text = "Quit
 "
 
 [connection signal="pressed" from="ContinueButton" to="." method="_on_continue_pressed"]
-[connection signal="pressed" from="RestartButton" to="." method="_on_restart_pressed"]
 [connection signal="pressed" from="QuitButton" to="." method="_on_quit_pressed"]

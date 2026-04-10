@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://dmsf2ljqwqofm"]
 
+[ext_resource type="Script" uid="uid://c8vv1ijtvsycw" path="res://scripts/level_1.gd" id="1_2ku1j"]
 [ext_resource type="Texture2D" uid="uid://wjisjp00wnfi" path="res://assets/Environment/Ocean0.png" id="1_6sh32"]
 [ext_resource type="Texture2D" uid="uid://b0wyeqxrxt8if" path="res://assets/Environment/Ocean1.png" id="2_ejswk"]
 [ext_resource type="Texture2D" uid="uid://ddnmx77qq573k" path="res://assets/Environment/Ocean2.png" id="3_bbk5w"]
@@ -10,6 +11,8 @@
 [ext_resource type="PackedScene" uid="uid://bn21jd7ogxmel" path="res://scenes/pufferfish.tscn" id="8_bbk5w"]
 [ext_resource type="PackedScene" uid="uid://bqy1vic8askym" path="res://scenes/pause_menu.tscn" id="9_conm7"]
 [ext_resource type="PackedScene" uid="uid://dykix03lyra6w" path="res://scenes/finish_line.tscn" id="10_d3jkd"]
+[ext_resource type="Script" uid="uid://d3nb75jwt4aks" path="res://scripts/score_label.gd" id="10_u3awl"]
+[ext_resource type="AudioStream" uid="uid://dksjnj5ulqu4u" path="res://assets/audio/bgm.mp3" id="13_f31uk"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_conm7"]
 texture = ExtResource("1_6sh32")
@@ -4041,6 +4044,7 @@ normal = Vector2(0, 1)
 
 [node name="Node2D" type="Node2D" unique_id=1346473699]
 position = Vector2(83, -691)
+script = ExtResource("1_2ku1j")
 
 [node name="TileMap" type="TileMap" parent="." unique_id=1833359735]
 format = 2
@@ -4192,6 +4196,11 @@ layer = 100
 [node name="PauseMenu" parent="CanvasLayer" unique_id=1817210688 instance=ExtResource("9_conm7")]
 z_index = 100
 
+[node name="ScoreLabel" type="Label" parent="CanvasLayer" unique_id=1690511050]
+offset_right = 40.0
+offset_bottom = 23.0
+script = ExtResource("10_u3awl")
+
 [node name="floor" type="StaticBody2D" parent="." unique_id=487312571]
 position = Vector2(-29, 1748)
 
@@ -4205,5 +4214,8 @@ position = Vector2(-38, 463)
 shape = SubResource("WorldBoundaryShape2D_d3jkd")
 
 [node name="FinishLine" parent="." unique_id=815341691 instance=ExtResource("10_d3jkd")]
-position = Vector2(2901, 894)
+position = Vector2(3073, 954)
 next_scene_path = "uid://bednwrlvouojf"
+
+[node name="BGMPlayer" type="AudioStreamPlayer" parent="." unique_id=686143322]
+stream = ExtResource("13_f31uk")

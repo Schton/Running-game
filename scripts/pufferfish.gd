@@ -12,16 +12,10 @@ func _process(delta):
 		queue_free()
 
 func _on_body_entered(body):
-	# If the body entering the Area2D is the player, restart
-	if body.name == "Player":
-		#get_tree().reload_current_scene()
-		print("Player hit a pufferfish!")
-		die()
-		
-func die():
-	# For now, we'll just restart the scene
-	# You can add explosion effects or a Game Over menu here later
-	get_tree().reload_current_scene() 
+	# We check if the thing we hit has a function called "die"
+	if body.has_method("die"):
+		print("Pufferfish hit the player!")
+		body.die() # This tells the PLAYER script to run its die function
 
 func _on_visible_on_screen_notifier_2d_screen_exited() -> void:
 	print("Pufferfish died!")

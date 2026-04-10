@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://bp7i60iyhx23e"]
 
+[ext_resource type="Script" uid="uid://p0f6h1nnv68u" path="res://scripts/sea_mines.gd" id="1_jbid4"]
 [ext_resource type="Texture2D" uid="uid://dxp1cdg4hf3q6" path="res://assets/Environment/4.png" id="1_n6tg6"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_mvo0y"]
@@ -20,13 +21,16 @@ animations = [{
 [sub_resource type="CircleShape2D" id="CircleShape2D_n6tg6"]
 radius = 73.02739
 
-[node name="SeaMines" type="Node2D" unique_id=1105593223]
+[node name="SeaMines" type="Area2D" unique_id=1077805847]
+script = ExtResource("1_jbid4")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1673098078]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=309814547]
 position = Vector2(0, 18.999992)
 scale = Vector2(0.98784727, 0.98784727)
 sprite_frames = SubResource("SpriteFrames_a761w")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=274009304]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2132983030]
 position = Vector2(-2.999999, 1.9999962)
 shape = SubResource("CircleShape2D_n6tg6")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

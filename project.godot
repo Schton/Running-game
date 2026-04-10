@@ -11,13 +11,14 @@ config_version=5
 [application]
 
 config/name="Running-game"
-run/main_scene="uid://b6g6g4rij7ev1"
+run/main_scene="uid://cgn2tk4ankan0"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 config/icon="res://icon.svg"
 
 [autoload]
 
 Transition="*uid://bvndxxgstg6qv"
+Global="*uid://bf3ougm0gly5u"
 
 [display]
 

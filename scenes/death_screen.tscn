@@ -1,5 +1,7 @@
 [gd_scene format=3 uid="uid://djebbyvahmf7h"]
 
+[ext_resource type="Script" uid="uid://b2mqxwxtm3ktu" path="res://scripts/death_screen.gd" id="1_uyutr"]
+
 [node name="DeathScreen" type="Control" unique_id=1253390057]
 layout_mode = 3
 anchors_preset = 15
@@ -7,6 +9,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_uyutr")
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=1457650967]
 layout_mode = 1
@@ -58,3 +61,6 @@ offset_bottom = 517.0
 theme_override_font_sizes/font_size = 64
 text = "Quit
 "
+
+[connection signal="pressed" from="RestartButton" to="." method="_on_restart_pressed"]
+[connection signal="pressed" from="QuitButton" to="." method="_on_quit_pressed"]
